@@ -1,0 +1,142 @@
+@import url(style.css);
+
+/* for tablet */
+
+@media (max-width: 992px) {
+  html {
+    font-size: 56% !important;
+  }
+  .blog-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #hero {
+    margin: 2rem 5.8rem;
+    border-radius: 30px;
+  }
+  .hero-left {
+    padding: 3.8rem;
+  }
+  .hero-right {
+    height: 100%;
+    padding: 1.8rem;
+  }
+
+  .hero-right img {
+    width: 95%;
+    height: 100%;
+    margin-top: 0rem;
+    object-fit: cover;
+  }
+
+  #featured-blogs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-nav-panel {
+    background: #f3f3f37c;
+
+    width: 90%;
+  }
+  .blog-nav-panel .nav-grp {
+    flex-direction: row;
+    width: 80%;
+  }
+  .blog-nav-panel li {
+    border: 1px solid var(--light-black);
+  }
+  .view {
+    visibility: visible;
+  }
+
+  .bottom-nav ul {
+    flex-wrap: wrap;
+    width: 48%;
+    margin: 0 auto;
+  }
+}
+/* for mobile */
+@media (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 50% !important;
+  }
+  .blog-posts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-left,
+  hero-right {
+    width: 80vw;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero-left p {
+    font-size: 1.8rem;
+
+    padding-right: 0rem;
+  }
+  .hero-button {
+    margin: 2rem auto;
+  }
+
+  .blog-nav-panel .nav-grp {
+    flex-direction: column;
+    width: 48%;
+  }
+  .view {
+    visibility: hidden;
+  }
+  .bottom-nav ul {
+    flex-direction: column;
+    width: 48%;
+    margin: 0 auto;
+  }
+}
+
+/* for small device */
+
+@media (max-width: 576px) {
+  html {
+    font-size: 40% !important;
+  }
+  .blog-posts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .view {
+    visibility: hidden;
+  }
+  #hero {
+    margin: 2rem 3.4rem;
+    border-radius: 30px;
+    flex-direction: column;
+  }
+  .hero-left,
+  hero-right {
+    width: 80vw;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero-left p {
+    font-size: 1.8rem;
+
+    padding-right: 0rem;
+  }
+  .hero-button {
+    margin: 2rem auto;
+  }
+  .blog-nav-panel .nav-grp {
+    flex-direction: column;
+    width: 48%;
+  }
+
+  .bottom-nav ul {
+    flex-direction: column;
+    width: 48%;
+    margin: 0 auto;
+  }
+}
