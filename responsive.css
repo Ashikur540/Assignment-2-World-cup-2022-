@@ -139,4 +139,14 @@
     width: 48%;
     margin: 0 auto;
   }
+  .bottom-nav ul li a {
+    margin-bottom: 2.4rem;
+    color: white;
+    font-size: 1.8rem;
+}
+  .social ul li a i {
+    color: white;
+    font-size: 2.4rem;
+  }
+  
 }
